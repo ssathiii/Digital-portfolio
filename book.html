@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookstore</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #book-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    
+    .book {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        width: 500px;
+    }
+    
+    .buy-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }</style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <center>
+        <h1>WELCOME TO BOOKSTORE</h1>
+        </center>
+    </header>
+    <section id="book-list">
+        <article class="book">
+            <img src=<article class="book">
+                <img src="C:\wamp\www\phplab\model\book1.jpg.webp" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author: Author Name 1</p>
+            <p>Price: $100</p>
+            <button class="buy-button">Buy Now</button>
+        </article>
+        <article class="book">
+            <img src="C:\wamp\www\phplab\model\image2.png" alt="Book 1">
+            <h2>Book Title 2</h2>
+            <p>Author: Author Name 2</p>
+            <p>Price: $200</p>
+            <button class="buy-button">Buy Now</button>
+        </article>
+        <article class="book">
+            <img src=<article class="book">
+                <img src="C:\wamp\www\phplab\model\image4.png" alt="Book 1">
+            <h2>Book Title 3</h2>
+            <p>Author: Author Name 3</p>
+            <p>Price: $300</p>
+            <button class="buy-button">Buy Now</button>
+        </article>
+        <article class="book">
+            <img src=<article class="book">
+                <img src="C:\wamp\www\phplab\model\image3.png" alt="Book 1">
+            <h2>Book Title 4</h2>
+            <p>Author: Author Name 4</p>
+            <p>Price: $400</p>
+            <button class="buy-button">Buy Now</button>
+        </article>
+        <!-- Add more book articles here -->
+    </section>
+    
+    <script>
+    const buyButtons = document.querySelectorAll('.buy-button');
+
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Book purchased! Thank you for shopping with us.');
+        
+    });
+});
+</script>
+</body>
+</html>
+
+
